@@ -19,8 +19,8 @@ const Alert: FC<{ status: boolean; length: number }> = ({ status, length }) => {
 const Card: FC<City> = ({ codePostal, nomCommune }) => {
   return (
     <div className='flex justify-between bg-card p-4'>
-      <h3>{nomCommune}</h3>
-      <p>{codePostal}</p>
+      <h3 className='text-white font-bold'>{nomCommune}</h3>
+      <p className='text-text font-bold'>{codePostal}</p>
     </div>
   );
 };
@@ -45,11 +45,12 @@ function App() {
 
   return (
     <div className='bg-global p-8'>
-      <div className='bg-blocks mb-8 rounded-xl p-8 flex gap-8'>
-        <p>Je recherche...</p>
+      <div className='bg-blocks mb-8 rounded-xl p-4 flex items-center gap-8'>
+        <p className='text-3xl font-bold'>Je recherche...</p>
         <input
           type='text'
           placeholder='...une ville, un code postal'
+          className='py-2 px-4 rounded-lg bg-global flex-grow placeholder-text-light text-3xl font-bold'
           onChange={(e) => setQuery(e.target.value)}
         />
       </div>
