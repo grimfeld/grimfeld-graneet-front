@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live URL
+
+Open [http://app.graneet.grimfeld.tech/](http://app.graneet.grimfeld.tech/) to view the live app
+
 ## Available Scripts
 
 In the project directory, you can run:
